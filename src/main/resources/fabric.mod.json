@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "randomadditions",
+  "version": "0.1.0",
+
+  "name": "Random Additions",
+  "description": "A mod that just adds random things for fun",
+  "authors": [
+    "Crackers0106"
+  ],
+  "contact": {
+    "sources": "https://github.com/Crackers0106/randomadditions"
+  },
+
+  "license": "LGPL-3.0",
+  "icon": "assets/randomadditions/icon.png",
+
+  "environment": "*",
+
+  "accessWidener": "randomadditions.accesswidener",
+  "entrypoints": {
+    "main": [
+      "net.crackers0106.randomadditions.RandomAdditions"
+    ],
+    "terrablender": [
+      "net.crackers0106.randomadditions.RandomAdditions"
+    ],
+    "client": [
+    ]
+  },
+  "mixins": [
+    "randomadditions.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
